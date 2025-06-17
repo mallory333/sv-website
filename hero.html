@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+
+
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="stylesheet/hero.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/S.png" alt="logo"> </a>
+        </div>
+        <div class="nav-right">
+        <!--  <a href="#about">About</a>-->
+          <a href="#books">Books</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+         
+        </div>
+      </nav>
+    </header>
+
+
+
+
+    <section class="hero">
+      <div class="hero-img">
+        <img src="img/hero-img-1.jpg" alt="Image Of Author" />
+      </div>
+      <div class="hero-text">
+        <h2>Helping Women Rise with Confidence</h2>
+
+
+
+
+        <p>
+          As an author and motivational speaker, Sienna Voss shares powerful
+          stories and insights on women’s rights, self-worth, and resilience.
+          Her mission is to help women everywhere rediscover their strength and
+          rise with confidence.
+        </p>
+        <a href="#contact" class="btn">Work With Me</a>
+      </div>
+    </section>
+   <!-- <section id="about" class="about">
+    <div class="bio">
+      <div class="img-row">
+        <img src="img/bio-img.jpg">
+        <div class="overlay-text">BIOGRAPHY</div>
+      <img src="img/bio-img-2.jpg">
+    </div>
+      <p>Sienna Voss is a passionate coach, author, and speaker devoted to helping women reclaim their power and rewrite the stories they’ve been told about who they should be. With a background in psychology and over a decade of experience working with women from all walks of life, Sienna has become known for her grounded wisdom, compassionate presence, and ability to spark real transformation.</p>
+
+
+
+
+<p>Through her writing and speaking engagements, she addresses topics such as healing from past trauma, navigating identity shifts, and stepping fully into your authentic voice. Sienna believes that personal growth is not about becoming someone new it's about remembering who you've always been.</p>
+
+
+
+
+<p>Her workshops and 1:1 coaching sessions provide a safe, empowering space for women to explore self-worth, set boundaries, and build a life rooted in purpose. Whether she’s on stage or holding space in a private session, Sienna leads with clarity, empathy, and an unshakable belief in the strength of women rising.</p>
+
+
+
+
+<p>When she’s not writing or speaking, you’ll find her hiking quiet trails, sipping strong coffee, or curled up with a good book and her rescue dog, Luna.</p> 
+</div>
+ About content goes here 
+</section> -->
+<section id="books" class="books-section">
+  <h2>Books by Sienna Voss</h2>
+  <div class="book-grid-wrapper">
+  <div class="book-grid">
+    <div class="book">
+      <img src="img/book-1.png" alt="Stillness in the Fire cover">
+      <h3>Stillness in the Fire</h3>
+      <p>A guide to finding calm in the chaos. In this bestselling book, Sienna Voss shares meditative practices and gentle wisdom for staying grounded during life’s most challenging seasons.</p>
+    </div>
+    <div class="book">
+      <img src="img/book-2.png" alt="Where the Earth Ends cover">
+      <h3>Where the Earth Ends</h3>
+      <p>Power doesn’t have to be loud. Sienna redefines leadership through the lens of compassion, intuition, and softness — showing that gentleness is a strength, not a weakness.</p>
+    </div>
+    <div class="book">
+      <img src="img/book-3.png" alt="Before Wings cover">
+      <h3>Before Wings</h3>
+      <p>Before we rise, we must root. This book explores ancestral healing, self-connection, and the quiet power of learning who you were before the world told you who to be.</p>
+    </div>
+  </div>
+  </div>
+  <section id="testimonials" class="testimonial-section">
+  <h2>What Readers Are Saying</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <p>"Sienna’s words helped me feel seen in ways I never expected. Her writing is both powerful and gentle — a true gift."</p>
+      <span class="author">– Maya L.</span>
+    </div>
+    <div class="testimonial">
+      <p>"Reading *Before Wings* brought me closer to my own story. I recommend it to anyone seeking inner peace."</p>
+      <span class="author">– Jordan M.</span>
+    </div>
+    <div class="testimonial">
+      <p>"Each book feels like a warm conversation with a wise friend. Sienna writes with such compassion and clarity."</p>
+      <span class="author">– Eleni T.</span>
+    </div>
+  </div>
+</section>
+<section id="contact" class="contact-section">
+  <h2>Let's Chat!</h2>
+  <p>If you’d like to collaborate, ask a question, or just say hello send a message below!</p>
+
+
+  <form class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+
+
+    <div
+      id="screen-size"
+      style="
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: #000;
+        color: #fff;
+        padding: 5px;
+        font-size: 14px;
+        z-index: 1000;
+      "
+    ></div>
+    <script>
+      function updateSize() {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        document.getElementById(
+          "screen-size"
+        ).textContent = `${width}px × ${height}px`;
+      }
+
+
+
+
+      window.addEventListener("resize", updateSize);
+      updateSize();
+    </script>
+  </body>
+</html>
